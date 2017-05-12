@@ -1,0 +1,35 @@
+﻿{
+  "manifest_version": 2,
+  "name": "手机号使用记录",
+  "description": "This extension aim at to help you to record websites where your phone number used when register/login/contact-us etc.",
+  "version": "1.0",
+  "icons": {
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "background": {
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_icon": "images/browseraction.png",
+    "default_title": "手机号使用记录",
+    "default_popup": "popup.html"
+  },
+  "homepage_url": "",
+  "options_ui": {
+    "page": "options.html"
+  },
+  "web_accessible_resources": [
+    "/images/*.png",
+    "/libs/jquery.js",
+  ],
+  "offline_enabled": true,
+  "default_locale": "zh",
+  "permissions": [
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "optional_permissions": [
+    "desktopCapture"
+  ]
+}
